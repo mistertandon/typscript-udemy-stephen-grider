@@ -19,10 +19,14 @@ const url = "https://jsonplaceholder.typicode.com/todos/1";
 
 axios({ method: "GET", url }).then((response) => {
   const todo = response.data as ToDo;
-
-  console.log(`
-    The ToDo with id: ${todo.id}
-    Has a title of: ${todo.title}
-    Is it completed: ${todo.completed}
-    `);
+  const { id, title, completed } = todo;
+  logToDo(id, title, completed);
 });
+
+const logToDo = (id: number, title: string, completed: boolean) => {
+  console.log(`
+    The ToDo with id: ${id}
+    Has a title of: ${title}
+    Is it completed: ${completed}
+    `);
+};
