@@ -1,5 +1,9 @@
 #### Get started with typescript
 
+##### What is type
+
+> Type refer to all the properties and method that a value has.
+
 > _In order to run this script_
 
 ```

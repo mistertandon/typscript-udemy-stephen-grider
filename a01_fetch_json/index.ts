@@ -20,6 +20,7 @@ const url = "https://jsonplaceholder.typicode.com/todos/1";
 axios({ method: "GET", url }).then((response) => {
   const todo = response.data as ToDo;
   const { id, title, completed } = todo;
+
   logToDo(id, title, completed);
 });
 
