@@ -72,7 +72,7 @@ console.log("coordinatesB", coordinatesB);
 let words: string[] = ["red", "green", "blue"];
 let foundWord: boolean;
 
-for (let i: number = 0; i < words.length:number; i++) {
+for (let i: number = 0; i < words.length; i++) {
   if (words[i] === "green") {
     foundWord = true;
   }
