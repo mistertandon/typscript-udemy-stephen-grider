@@ -39,12 +39,13 @@ interface Weather {
   date: Date;
   weather: string;
 }
+
 const todaysWeather: Weather = {
   date: new Date(),
   weather: "Sunny",
 };
 
-const logWeather = ({ date, weather }: Weather) => {
+const logWeather = ({ date, weather }: Weather): void => {
   console.log(`
     Today's date: ${date} and weather ${weather}
     `);
